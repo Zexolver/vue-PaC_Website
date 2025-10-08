@@ -1,6 +1,7 @@
 <script setup>
 // (Using AI to help learn and understand Vue.js)
 // We will import components here later
+import{RouterView} from 'vue-router' // 
 import TheHeader from './components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue'
 </script>
