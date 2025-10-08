@@ -1,11 +1,28 @@
-<script setup></script>
+<script setup>
+// (Using AI to help learn and understand Vue.js)
+// We will import components here later
+import TheHeader from './components/TheHeader.vue'
+import TheFooter from './components/TheFooter.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div id="Gradient_1">
+    <TheHeader />
+
+    <main>
+      <RouterView />
+    </main>
+
+    <br>
+    <TheFooter />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* Scoped styles only apply to this component. 
+   We're using global CSS for now,
+   but this is here for future use. */
+   main{
+    min-height: calc(100vh - 150px); /* Simple calculation to help footer stay down */
+   }
+</style>
