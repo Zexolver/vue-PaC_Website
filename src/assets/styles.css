@@ -1,0 +1,39 @@
+/* styles.css */
+*{
+    color: white;
+}
+#Gradient_1{
+    background-image: linear-gradient(to right, rgb(95, 107, 97) , rgb(75, 156, 95));
+}
+body {
+   /*margin: 55px;*/
+   background-color: rgba(85, 92, 83, 0.856);
+}
+.Gray_Box {
+background-color: #333;
+overflow: hidden;
+border-radius: 15px;
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 15%;
+}
+#Index_EC{
+    text-align: center;
+    font-size: 350%;
+    transition: 7s;
+}
+footer{
+  text-align: center;
+  background-color: #333;
+  margin-bottom: 0%;
+}
+
+@media (max-width: 750px) {
+.overview, .account {
+flex-direction: column;
+width: auto;
+}
+.overview {
+margin: 0;
+}
+}
