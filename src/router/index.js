@@ -1,8 +1,34 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView,
+      meta: {title: 'Phone Website'} // Custom data for the route
+    },
+    {
+      path: '/cyberdecks',
+      name: 'cyberdecks',
+      component: () => MessagePort('../views/CyberdecksView.vue'), // Lazy-loading
+      meta: {title: 'Cyberdeck Section'} 
+    },
+    {
+      path: '/linux-phones',
+      name: 'linux-phones',
+      component: () => MessagePort('../views/LinuxPhonesView.vue'), // Lazy-loading
+      meta: {title: 'Linux Phones Section'} 
+    },
+    {
+      path: '/lora-phones',
+      name: 'lora-phones',
+      component: () => MessagePort('../views/LoraPhonesView.vue'), // Lazy-loading
+      meta: {title: 'Lora Phones Section'} 
+    }
+  ],
 })
 
 export default router
