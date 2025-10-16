@@ -5,9 +5,9 @@ import App from './App.vue'
 import router from './router'
 
 // Import your global CSS files
-import './assets/styles.css'
-import './assets/nav_styles.css'
-import './assets/transition_styles.css'
+import './assets/css_files/styles.css'
+import './assets/css_files/nav_styles.css'
+import './assets/css_files/transition_styles.css'
 
 const app = createApp(App)
 
