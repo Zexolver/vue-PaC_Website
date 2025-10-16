@@ -17,7 +17,7 @@ const pageTitle = computed(() => route.meta.title || 'Phone Website');
             <li><RouterLink to="/cyberdecks">Cyberdecks</RouterLink></li>
             <li><RouterLink to="/linux-phones">Linux Phones</RouterLink></li>
             <li><RouterLink to="/lora-phones">Lora Phones</RouterLink></li>
-            <li><a href="https://github.com/Zexolver/vue-PaC_Website">Source Code</a></li>
+            <li><a href="https://github.com/Zexolver/vue-PaC_Website" target="_blank">Source Code</a></li>
         </ul>
     </div>
 </template>
