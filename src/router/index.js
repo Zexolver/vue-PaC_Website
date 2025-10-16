@@ -13,19 +13,19 @@ const router = createRouter({
     {
       path: '/cyberdecks',
       name: 'cyberdecks',
-      component: () => MessagePort('../views/CyberdecksView.vue'), // Lazy-loading
+      component: () => import('../views/CyberdecksView.vue'), // Lazy-loading
       meta: {title: 'Cyberdeck Section'} 
     },
     {
       path: '/linux-phones',
       name: 'linux-phones',
-      component: () => MessagePort('../views/LinuxPhonesView.vue'), // Lazy-loading
+      component: () => import('../views/LinuxPhonesView.vue'), // Lazy-loading
       meta: {title: 'Linux Phones Section'} 
     },
     {
       path: '/lora-phones',
       name: 'lora-phones',
-      component: () => MessagePort('../views/LoraPhonesView.vue'), // Lazy-loading
+      component: () => import('../views/LoraPhonesView.vue'), // Lazy-loading
       meta: {title: 'Lora Phones Section'} 
     }
   ],
