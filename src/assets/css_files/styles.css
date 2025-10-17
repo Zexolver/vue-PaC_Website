@@ -36,7 +36,16 @@ footer{
   background-color: #333;
   margin-bottom: 0%;
 }
-
+.multi-img{
+    display: grid;
+  column-gap: 50px;
+}
+.small-img{
+    
+    size: 40%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
 @media (max-width: 750px) {
 .overview, .account {
 flex-direction: column;
