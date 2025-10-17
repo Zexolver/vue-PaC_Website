@@ -8,6 +8,7 @@ import TheFooter from './components/TheFooter.vue'
 
 <template>
   <div id="Gradient_1">
+    <br>
     <TheHeader />
 
     <main>
