@@ -1,6 +1,8 @@
 <template>
     <footer>
-        Test
+        Footer
+        <br>
+        <a href="https://github.com/Zexolver/vue-PaC_Website">Source Code</a>
     </footer>
 </template>
 
